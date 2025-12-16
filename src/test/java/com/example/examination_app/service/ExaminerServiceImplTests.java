@@ -21,6 +21,7 @@ public class ExaminerServiceImplTests {
         examinerService.servicesBySubject.get("java").add(new Question("Вопрос 2", "Ответ 2"));
     }
 
+
     @Test
     public void testGetUniqueQuestions() {
         List<Question> questions = examinerService.getQuestions(2);
