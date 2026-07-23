@@ -1,7 +1,6 @@
 package com.example.examination_app.service;
 
 import com.example.examination_app.model.Question;
-import com.example.examination_app.service.impl.JavaQuestionService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

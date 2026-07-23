@@ -1,13 +1,15 @@
-package com.example.examination_app.service.impl;
+package com.example.examination_app.service;
 
 import com.example.examination_app.model.Question;
 import com.example.examination_app.service.QuestionService;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class JavaQuestionService implements QuestionService<Question> {
+@Service
+public class JavaQuestionService implements QuestionService {
     private final List<Question> questions = new ArrayList<>();
 
     @Override

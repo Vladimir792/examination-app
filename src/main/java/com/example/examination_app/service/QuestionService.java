@@ -4,8 +4,8 @@ import com.example.examination_app.model.Question;
 
 import java.util.List;
 
-public interface QuestionService<T extends Question> {
-    void add(T question);
+public interface QuestionService {
+    void add(Question question);
     boolean remove(String question, String answer);
-    List<T> findAll();
+    List<Question> findAll();
 }

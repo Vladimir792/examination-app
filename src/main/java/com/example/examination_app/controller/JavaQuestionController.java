@@ -13,10 +13,10 @@ import java.util.List;
 @RequestMapping("/exam/java")
 public class JavaQuestionController {
 
-    private final JavaQuestionService<Question> javaQuestionService;
+    private final JavaQuestionService javaQuestionService;
 
     @Autowired
-    public JavaQuestionController(JavaQuestionService<Question> javaQuestionService) {
+    public JavaQuestionController(JavaQuestionService javaQuestionService) {
         this.javaQuestionService = javaQuestionService;
     }
 

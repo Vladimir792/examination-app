@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
@@ -28,7 +27,7 @@ public class ExamController {
     public ResponseEntity<List<Question>> getQuestions(@PathVariable int amount) {
         try {
             return ResponseEntity.ok(examinerService.getQuestions(amount));
-        } catch (ResponseStatusException ex) {
+        } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
         }
     }
